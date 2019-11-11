@@ -44,17 +44,28 @@ for (let i = 0; i < mobles.length; i++) {
 
 // Exercici 8
 function calculadora(operador, valor1, valor2) {
-    var suma = (valor1 + valor2);
-    var resta = (valor1 - valor2);
-    var multi = (valor1 * valor2);
-   
-    if(operador == "suma"){
-        document.write("<p>Exercici 8: "+"La suma entre "+valor1+ " + " +valor2+ " es: " +suma+ "</p>");
-    }else if(operador == "resta"){
-        document.write("<p>Exercici 8: "+"La resta entre "+valor1+ " - " +valor2+ " es: " +resta+ "</p>");
-    }else {
-        document.write("<p>Exercici 8: "+"La multiplicación entre "+valor1+ " x " +valor2+ " es: " +multi+ "</p>");
-    }
     
+    
+    if(operador == "suma")
+    {
+        document.write("<p>Exercici 8: "+"La suma entre "+valor1+ " + " +valor2+ " es: " + (valor1 + valor2) + "</p>");
+    }
+    else if(operador == "resta")
+    {
+        document.write("<p>Exercici 8: "+"La resta entre "+valor1+ " - " +valor2+ " es: " +(valor1 - valor2)+ "</p>");
+    }
+    else if(operador == "multiplicacion")
+    {
+        document.write("<p>Exercici 8: "+"La multiplicación entre "+valor1+ " x " +valor2+ " es: " +(valor1 * valor2)+ "</p>");
+    }
+    else if(operador == "division")
+    {
+        document.write("<p>Exercici 8: "+"La división entre "+valor1+ " x " +valor2+ " es: " +(valor1 / valor2)+ "</p>");
+    }
+    else 
+    {
+        console.log("La operación no es válida");
+        document.write("<p>La operación no es válida</p>");
+    }    
 }
-var resultat = calculadora("resta",40,20);
+var resultat = calculadora("caca",40,20);
