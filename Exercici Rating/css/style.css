@@ -1,19 +1,43 @@
-.fas {
-    font-size: 100px;
-}
-.color_i {
-    color: #c9f700;
-}
-.color_i:hover, .color_i:hover~i {
-    color: #258001;
-    transition: 0.8s;
-}
-.active {
-    color: #258001;
+body 
+{
+    background-color:cadetblue;
 }
 
-label:hover,  label:hover~label {
-    color: #cc0000;
+span::before 
+{
+    content: "\f094";
+    float: right;
+    font-family: 'Font Awesome 5 Free';
+    font-size: 100px;
+    
+    margin: 10px;
+}
+
+span:hover, span:hover~span {
+    color: #c9f700;
     transition: 0.8s;
-    font-weight: 900;
+    font-weight: 600;
+}
+
+.container 
+{
+    width: 90vw;
+    height: 90vh;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+}
+.center 
+{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.active {
+    color: #c9f700;
+    font-weight: 600;
 }
