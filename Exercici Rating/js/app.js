@@ -20,3 +20,24 @@ window.addEventListener("click", function(e) { //captura cualquier click en cual
         clearLemons();
     }
 })
+
+var x = 1;
+
+if(x == 1)
+{
+    function demo1(x){
+        console.log("El valor de X es: "+x);
+        return x*2;
+    }
+}
+else 
+{
+    function demo1(x)
+    {   
+        console.log("El valor de X es: "+x);
+        return x*10;
+    }
+}
+x = demo1(3);
+console.log("El valor de X es: "+x);
+document.writeln(x);
